@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas</title>
+		<style type="text/css">
+			canvas {
+				border: dotted 1px black;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var ctx = theCanvas.getContext("2d");
+					if (ctx) {
+                        ctx.fillStyle = "green";
+                        ctx.fillRect(20, 20, 100, 100);
+                        ctx.lineWidth = 5;
+                        ctx.strokeStyle = "rgba(0, 0, 255, 1)";
+                        ctx.strokeRect(20, 20, 100, 100);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Uso de estilos y colores</h1>
+		<p>Este ejemplo muestra el uso de estilos y colores para dibujar figuras b&aacute;sicas</p>
+		<canvas id="Canvas1" width="500" height="200">Tu navegador no soporta el elemento canvas</canvas>
+	</body>
+</html>

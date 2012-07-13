@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Tipos de campo</title>
+		<script type="text/javascript" src="cordova-1.5.0js"></script>
+	</head>
+	<body>
+	
+	<form id="riderReview" method="post" action="#">
+		<p><label for="trailName">Nombre(s):</label>
+		<input type="text" name="name" id="name" tabindex="10" autofocus placeholder="Nombre propio" required></p>
+		<p><label for="name">Apellidos:</label>
+		<input type="text" name="name" id="name" tabindex="20" placeholder="Ambos apellidos"></p>
+		<p><label for="email">Email:</label>
+		<input type="email" name="email" id="email" tabindex="30" placeholder="Email" required></p>
+		<p><label for="url">P&aacute;gina web:</label>
+		<input type="url" name="url" id="url" tabindex="40" placeholder="Opcional"></p>
+		<p><label for="riders">N&uacute;mero de acompa&ntilde;antes</label> 
+		<input type="number" name="riders" id="riders" tabindex="60" step="1" max="15" min="1" value="1"></input></p>
+		<p><label for="date">Fecha del viaje:</label>
+		<input type="date" name="date" id="date"></input></p>
+		<label for="review">Observaciones:<br>
+		</label>
+		<textarea name="review" id="review" tabindex="70" cols="45" rows="10"></textarea>
+		<p><input type="submit" name="submit" id="submit" tabindex="80" value="Env&iacute;a tu rese&ntilde;a"><p>
+    </form>
+
+	
+
+	</body>
+</html>
